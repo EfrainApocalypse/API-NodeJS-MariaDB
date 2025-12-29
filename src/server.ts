@@ -9,7 +9,7 @@ import { fastifySwagger } from "@fastify/swagger";
 import { fastifySwaggerUi } from "@fastify/swagger-ui";
 import { fastifyCors } from "@fastify/cors";
 import { routes } from "./routes";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 dotenv.config();
 
 const server = fastify().withTypeProvider<ZodTypeProvider>();
