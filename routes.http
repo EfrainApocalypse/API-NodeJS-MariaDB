@@ -1,0 +1,25 @@
+POST http://localhost:3333/messages
+Content-Type: application/json
+
+{
+    "autor":"autor1",
+    "valor":"mensagem1"
+}
+
+###
+GET http://localhost:3333/listarMensagem
+
+###
+GET http://localhost:3333/listarMensagem?search=2
+
+###
+PUT http://localhost:3333/atualizarMensagem/3
+Content-Type: application/json
+
+{
+    "autor":"autor1",
+    "valor":"mensagem2"
+}
+
+###
+DELETE http://localhost:3333/apagarMensagem/3
